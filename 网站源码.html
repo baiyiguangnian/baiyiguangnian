@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>百亿光年号</title>
+      <style>
+          body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+          }
+          #bj-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+          }
+          .content {
+            position: relative;
+            z-index: 1;
+            color: aqua;
+            text-align: center;
+            padding-top: 5vh;
+            padding-bottom: 50px;
+            text-shadow: 0 0 10px rgba(0,0,0,0,8);
+            height: 95vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .content::-webkit-scrollbar{
+            width: 8px;
+          }
+          .content::-webkit-scrollbar-thumb{
+            background: rgba(225,225,225,0.3);
+            border-radius: 4px;
+          }
+          h1{
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(0,0,0,0.8);
+          }
+          p.subtitle{
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-shadow: 0 0 5px rgba(0,0,0,0.8);
+          }
+          .file-list{
+            width: 70%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          }
+          .file-item{
+            background: ragb(225,225,225,0.15);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0,2);
+            transition: transfrom 0.2s ,background 0.2s;
+            text-align: left;
+          }
+          .file-item:hover{
+            transform: scale(1.3);
+            background: rgba(225,225,225,0.3);
+          }
+          .file-info{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+          .file-name{
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+          }
+          .file-desc{
+            font-size: 0.88rem;
+            color: rgb(9, 138, 138);
+          }
+          .download-btn{
+            background-color: rgb(245, 240, 245);
+            color: rgb(17, 165, 32);
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+          }
+          .download-btn:hover{
+            background-color: blueviolet;
+            box-shadow: 0 0 10px rgba(0,123,255,0.6);
+          }
+          @media (max-width: 600px) {
+            .file-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .download-btn {
+                width: 100%;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+            h1 { font-size: 2rem; }
+        }
+      </style>
+    </head>
+    <body>
+      <video autoplay muted loop playsinline id="bj-video">
+        <source src="videos/sc_bg_video.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <h1>百亿光年的数字学习站</h1>
+        <p>欢迎登入，同行者</p>
+        <div class="file-list">
+          <div calss="file-item">
+            <div class="file-info">
+              <span class="file-name">2018 美亚杯资格赛</span>
+              <span class="file-desc">6.0 MB</span>
+            </div>
+            <a href="files/百亿光年的2018美亚杯资格赛.pdf" class="download-btn" download>
+              查看
+            </a>
+          </div>
+          <div calss="file-item">
+            <div class="file-info">
+              <span class="file-name">2019 美亚杯资格赛</span>
+              <span class="file-desc">8.7 MB</span>
+            </div>
+            <a href="files/百亿光年的2019美亚杯资格赛.pdf" class="download-btn" download>
+              查看
+            </a>
+          </div>
+          <div calss="file-item">
+            <div class="file-info">
+              <span class="file-name">2022 美亚杯资格赛</span>
+              <span class="file-desc"> 9.8 MB</span>
+            </div>
+            <a href="files/百亿光年的2022美亚杯资格赛.pdf" class="download-btn" download>
+              查看
+            </a>
+          </div>
+          <div calss="file-item">
+            <div class="file-info">
+              <span class="file-name">2023 美亚杯资格赛</span>
+              <span class="file-desc">20.0 MB</span>
+            </div>
+            <a href="files/百亿光年的2023美亚杯资格赛.pdf" class="download-btn" download>
+              查看
+            </a>
+          </div>
+                    <div calss="file-item">
+            <div class="file-info">
+              <span class="file-name">2024 美亚杯资格赛</span>
+              <span class="file-desc">12.2 MB</span>
+            </div>
+            <a href="files/百亿光年的2024美亚杯资格赛.pdf" class="download-btn" download>
+              查看
+            </a>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+
